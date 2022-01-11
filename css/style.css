@@ -428,6 +428,16 @@ body {
 
 /* Clients */
 
+.clients-list {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-icon {
+    width: 106px;
+}
+
 
 /* Footer */
 
