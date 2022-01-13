@@ -15,6 +15,8 @@
     --background-secondary-color: #F5F4FA; 
     --background-third-color: #2F303A;
     --border-color: #EEEEEE;
+    --icon-color: #AFB1B8;
+
 }
 
 html {
@@ -388,7 +390,7 @@ body {
 }
 
 .button.primary.btn {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: none;
 }
 
 .button.secondary {
@@ -442,6 +444,11 @@ body {
 
 .portfolio-list-item:not(:nth-last-child(-n +3)) {
     margin-bottom: 30px;
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item {
@@ -531,4 +538,98 @@ body {
 
 .footer-link:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-text {
+    font-weight: 700;
+    line-height: 1.14x;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-links {
+    margin-right: 70px;
+}
+
+.footer-social-media {
+    padding-top: 12px;
+}
+
+.footer-text {
+    margin-bottom: 20px;
+}
+
+
+/* Social-media icons */
+
+.social-media {
+    display: flex;
+    
+    margin-right: auto;
+    margin-left: auto; 
+    justify-content: center;
+    margin-bottom: 30px; 
+    flex-direction: row;
+    width: 206px;
+    height: 44px; 
+    
+}
+
+.social-media-item {
+    width: 44px;
+    height: 44px;
+}
+
+.social-media-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: var(--icon-color);
+}
+
+.social-media-icon {
+    display: block;
+    text-align: center;
+    fill: currentColor;
+}
+
+.social-media-link:hover .social-media-icon {
+    fill: var(--secondary-text-color);
+}
+
+.social-media-link:hover {
+    background-color: var(--accent-color);
+}
+
+/* Footer social-media links */
+
+.social-media.bottom {
+    margin-bottom: 0;
+}
+
+.social-media-link.bottom {
+    color: var(--secondary-text-color);
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.social-media-icon.bottom {
+    fill: currentColor;
+}
+
+.social-media-link.bottom:hover {
+    background-color: var(--accent-color);
 }
