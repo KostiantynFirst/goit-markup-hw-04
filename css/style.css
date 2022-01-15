@@ -180,7 +180,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-right: 10px;
     text-decoration: none;
     justify-content: center;
     align-items: center;
@@ -189,13 +188,12 @@ body {
 
 .nav-icon {
     fill: currentColor;
+    margin-right: 10px;
 }
 
 
 .item:hover .icon-link,
-.item:hover .link,
-.item:focus .icon-link,
-.item:focus .link {
+.item:focus .icon-link {
     color: var(--accent-color);
 }
 
@@ -497,6 +495,10 @@ body {
     display: flex;
 }
 
+.clients-list > li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .client-link {
     display: flex;
     justify-content: center;
@@ -508,11 +510,6 @@ body {
     border-radius: 4px;
     text-decoration: none;
 }
-
-.client-link {
-    margin-right: 30px;
-}
-
 
 
 .clients-icon {
