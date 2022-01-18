@@ -187,8 +187,8 @@ body {
     color: var(--primary-text-color);
 }
 
-.auth-nav > .item:hover .icon-link,
-.auth-nav > .item:focus .icon-link {
+.icon-link:hover,
+.icon-link:focus {
     color: var(--accent-color);
 }
 
