@@ -145,9 +145,7 @@ body {
 }
 
 .site-nav .link:hover, 
-.site-nav .link:focus,
-.auth-nav .link:hover, 
-.auth-nav .link:focus {
+.site-nav .link:focus {
     color: var(--accent-color);
 }
 
@@ -189,15 +187,14 @@ body {
     color: var(--primary-text-color);
 }
 
+.auth-nav > .item:hover .icon-link,
+.auth-nav > .item:focus .icon-link {
+    color: var(--accent-color);
+}
+
 .nav-icon {
     fill: currentColor;
     margin-right: 10px;
-}
-
-
-.item:hover .icon-link,
-.item:focus .icon-link {
-    color: var(--accent-color);
 }
 
 
